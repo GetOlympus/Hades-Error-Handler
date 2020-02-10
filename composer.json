@@ -1,0 +1,29 @@
+{
+  "name": "getolympus/olympus-hades-error-handler",
+  "type": "library",
+  "description": "Olympus Hades is a bundle used to handle all Olympus errors from your WordPress website and its plugins.",
+  "keywords": ["olympus-hades", "olympus", "hades", "error", "handler", "errorhandler", "library", "php", "wordpress"],
+  "homepage": "https://github.com/GetOlympus/Hades-Error-Handler",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Achraf Chouk",
+      "homepage": "https://github.com/crewstyle"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "GetOlympus\\Hades\\": "src/Hades/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.x-dev"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "symfony/error-handler": "^5.0",
+    "monolog/monolog": "^2.0"
+  }
+}
