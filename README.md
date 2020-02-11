@@ -43,10 +43,7 @@ Once done, simple initiate your custom class and register handlers:
 /**
  * Use the ErrorDebugger to display errors
  */
-$err = new MyCustomPackage\ErrorDebugger();
-
-// Run debugger
-$err->register([
+$err = ErrorDebugger::register([
     'debug' => WP_DEBUG,
     'level' => WP_DEBUG ? 500 : 100,
     'logs'  => 'my/custom/logs/folder/',

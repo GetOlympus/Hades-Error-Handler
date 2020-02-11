@@ -27,6 +27,9 @@ class Handler implements HandlerInterface
      *
      * @param  string  $handler
      * @param  Logger  $logger
+     * @throws Exception
+     *
+     * @return FirePHPHandler | RotatingFileHandler | StreamHandler;
      *
      * @since  0.0.1
      */

@@ -96,14 +96,18 @@ class Logger implements LoggerInterface
     /**
      * Getter.
      *
-     * @param  string  $handler
+     * @param  string  $property
      *
      * @since  0.0.1
      */
-    public function get($attribute)
+    public function get($property)
     {
-        // Attribute
-        return $this->$attribute;
+        // Check property
+        if (property_exists(get_class($this), $property)) {
+            return $this->$property;
+        }
+
+        return null;
     }
 
     /**

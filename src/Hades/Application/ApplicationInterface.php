@@ -32,5 +32,5 @@ interface ApplicationInterface
      *
      * @since  0.0.1
      */
-    public function register($options) : void;
+    public static function register($options) : void;
 }
