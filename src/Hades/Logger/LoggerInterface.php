@@ -15,13 +15,26 @@ namespace GetOlympus\Hades\Logger;
 interface LoggerInterface
 {
     /**
-     * Getter.
+     * Push useful handler.
      *
-     * @param  string  $handler
+     * @param  string  $title
+     * @param  integer $level
+     * @param  string  $errorpath
+     *
+     * @return self
      *
      * @since  0.0.1
      */
-    public function get($attribute);
+    public static function create($title, $level, $errorpath) : self;
+
+    /**
+     * Getter.
+     *
+     * @param  string  $property
+     *
+     * @since  0.0.1
+     */
+    public function get($property);
 
     /**
      * Push useful handler.

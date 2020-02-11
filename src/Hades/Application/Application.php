@@ -22,7 +22,7 @@ abstract class Application implements ApplicationInterface
     /**
      * @var array
      */
-    protected $options = [
+    protected static $options = [
         'debug' => true,
         'level' => 100,
         'logs'  => OL_HADES_PATH.S.'app'.S.'logs'.S,
@@ -66,11 +66,11 @@ abstract class Application implements ApplicationInterface
      *
      * @since  0.0.1
      */
-    public function register($options) : void
+    public static function register($options) : void
     {
         // Set default values
-        $opts = array_merge($this->options, $options);
-        $opts['title'] = empty($opts['title']) ? $this->options['title'] : trim($opts['title']);
+        $opts = array_merge(self::$options, $options);
+        $opts['title'] = empty($opts['title']) ? self::$options['title'] : trim($opts['title']);
 
         // Set logger
         $logger = Logger::create($opts['title'], $opts['level'], $opts['logs']);
