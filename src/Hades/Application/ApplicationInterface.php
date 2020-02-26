@@ -3,7 +3,7 @@
 namespace GetOlympus\Hades\Application;
 
 /**
- * Olympus Hades interface.
+ * Application interface
  *
  * @package    OlympusHadesErrorHandler
  * @subpackage Application
