@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace GetOlympus\Hades;
 
@@ -8,10 +8,10 @@ use GetOlympus\Hades\Application\Application;
  * Package constants.
  */
 
-// Main file path
-define('OL_HADES_PATH', dirname(dirname(dirname(__FILE__))));
 // Directory separator
-defined('S') or define('S', DIRECTORY_SEPARATOR);
+defined('S')             or define('S', DIRECTORY_SEPARATOR);
+// Main file path
+defined('OL_HADES_PATH') or define('OL_HADES_PATH', dirname(dirname(dirname(__FILE__))));
 
 /**
  * Olympus Hades Error Handler.
@@ -24,4 +24,5 @@ defined('S') or define('S', DIRECTORY_SEPARATOR);
 
 class Hades extends Application
 {
+    //
 }
