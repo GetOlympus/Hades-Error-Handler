@@ -2,6 +2,8 @@
 
 namespace GetOlympus\Hades\Logger;
 
+use GetOlympus\Hades\Logger\Logger;
+
 /**
  * Logger interface
  *
@@ -25,7 +27,7 @@ interface LoggerInterface
      *
      * @since  0.0.1
      */
-    public static function create($title, $level, $errorpath) : self;
+    public static function create($title, $level, $errorpath) : Logger;
 
     /**
      * Getter.

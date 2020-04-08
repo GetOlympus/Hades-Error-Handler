@@ -1,3 +1,6 @@
+## 0.0.4 (April 8th, 2020)
+Fix bug with LoggerInterface
+
 ## 0.0.3 (February 11th, 2020)
 Declare main register function as static
 
