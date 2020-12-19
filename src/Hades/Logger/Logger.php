@@ -63,7 +63,7 @@ class Logger implements LoggerInterface
      *
      * @since  0.0.1
      */
-    public static function create($title, $level, $errorpath) : self
+    public static function create($title, $level, $errorpath) : Logger
     {
         // Get static occurrence
         $logger = new self();
