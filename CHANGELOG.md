@@ -1,3 +1,6 @@
+## 0.0.5 (December 19th, 2020)
+Fix bug with Logger class
+
 ## 0.0.4 (April 8th, 2020)
 Fix bug with LoggerInterface
 
